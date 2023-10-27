@@ -1,0 +1,1189 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Staatliches&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    font-family: 'Lato', sans-serif;
+}
+
+body {
+    background-color: #dddddd;
+}
+
+section,
+footer {
+    padding: 55px 0;
+}
+
+h3 {
+    font-size: 50px;
+    font-family: 'Staatliches', cursive;
+
+}
+
+p {
+    color: #3e4747;
+    font-family: 'Lato';
+    font-size: 18px;
+}
+
+@keyframes girar {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+.engrenagem {
+    animation: girar 6s linear infinite; /* Ajuste a duração (4s) e a aceleração da animação conforme necessário */
+}
+
+/* header */
+header {
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.container {
+    position: relative;
+    height: 730px;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 5%;
+}
+
+.overlay-image {
+    position: absolute;
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    align-items: end;
+}
+
+.pilares {
+    width: 100%;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 30px;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+}
+
+nav ul a {
+    color: #ffffff;
+    margin: 0 25px;
+    font-size: 14px;
+    display: block;
+}
+
+nav ul a::after {
+    content: "";
+    background-color: #3c7746;
+    height: 3px;
+    width: 0%;
+    display: block;
+    margin: 0 auto;
+    transition: 0.3s;
+}
+
+nav ul a:hover::after {
+    width: 100%;
+}
+
+/* MENU BAR */
+nav .icon-menu {
+    cursor: pointer;
+    font-size: 25px;
+    color: #f1f1f1;
+    display: none ;
+}
+
+nav .icon-close {
+    cursor: pointer;
+    display: none;
+    font-size: 30px;
+    color: #f1f1f1
+}
+
+.btn {
+    background-color: #3c7746;
+    color: #ffffff;
+    padding: 15px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.btn.animate-btn {
+    animation: animate-outline 1s ease-out infinite;
+}
+
+.btn:hover {
+    background-color: #32663a;
+}
+
+@keyframes animate-outline {
+    from {
+        outline: 0px solid #3c7746;
+    }
+    to {
+        outline: 15px solid #4f9bf900;
+    }
+} 
+
+.banner {
+
+    display: flex;
+    justify-content: center;
+}
+
+.banner .banner-text,
+.banner .banner-text-contato,
+.banner .banner-text-projetos {
+    margin: 10vh 10vw 0 10vw;
+    text-align: center;
+    padding: 0 10vw;
+}
+
+.banner .banner-text h1,
+.banner .banner-text-contato h1,
+.banner .banner-text-projetos h1 {
+    font-size: 75px;
+    color: white;
+    font-family: 'Staatliches', cursive;
+}
+
+.banner .banner-text p,
+.banner .banner-text-contato p,
+.banner .banner-text-projetos p {
+    font-size: 20px;
+    color: #c4d4d3;
+    font-weight: lighter;
+    margin: 20px 0;
+}
+
+/*section 1*/
+.proposito {
+    margin: 0 5% 0 7%;
+}
+
+.proposito .negocio {
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.proposito .text-proposito {
+    width: 60%;
+    padding: 0 40px;;
+}
+
+.proposito .text-proposito h3{
+    font-size: 56px;
+    color: #4aa259;
+    
+}
+
+.proposito .text-proposito p{
+    margin: 5px 0 20px 0;
+}
+
+.proposito .img-proposito {
+    width: 40%;
+}
+
+.proposito .img-proposito img {
+    width: 100%;
+}
+
+.proposito2 {
+    margin: 0 5% 0 7%;
+}
+
+.proposito2 .negocio {
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.proposito2 .text-proposito {
+    width: 60%;
+    padding: 0 40px;;
+}
+
+.proposito2 .text-proposito h3{
+    font-size: 56px;
+    color: #4aa259;
+    
+}
+
+.proposito2 .text-proposito p{
+    margin: 5px 0 20px 0;
+}
+
+.proposito2 .img-proposito {
+    width: 40%;
+}
+
+.proposito2 .img-proposito img {
+    width: 100%;
+}
+
+/*end section 1*/
+
+/*section 2*/
+.solucao {
+    margin: 0 5% 30px 7%;
+}
+
+.solucao .negocio {
+    display: flex;
+    align-items: center;
+}
+
+.solucao .text-proposito {
+    width: 60%;
+    padding: 0 40px;
+    align-items: center;
+}
+
+.ul2 {
+    column-count: 2;
+    margin: 5px 0 15px 0;
+}
+.solucao .text-proposito h3{
+    font-size: 56px;
+    color: #4aa259;
+    
+}
+
+.solucao .text-proposito p{
+    margin: 5px 0 20px 0;
+}
+
+.solucao .img-proposito {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.solucao .img-proposito img {
+    width: 100%;
+}
+
+.solucao2 {
+    margin: 0 5% 30px 7%;
+}
+
+.solucao2 .negocio {
+    display: flex;
+    align-items: center;
+}
+
+.solucao2 .text-proposito {
+    width: 60%;
+    padding: 0 40px;
+    align-items: center;
+}
+
+.solucao2 .text-proposito h3{
+    font-size: 56px;
+    color: #4aa259;
+    
+}
+
+.solucao2 .text-proposito p{
+    margin: 5px 0 20px 0;
+}
+
+.solucao2 .img-proposito {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.solucao2 .img-proposito img {
+    width: 100%;
+}
+
+/*end section 2*/
+
+
+/*cards*/
+
+*,
+*::before,
+*::after { box-sizing: border-box; }
+
+.card {
+    position: relative;
+    width: 350px;
+    height: 300px;
+    overflow: hidden;
+  
+    border-radius: 5px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+}
+  
+  /*Light blue cover above the slide show*/
+.card::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 900;
+  
+    display: block;
+    width: auto
+  
+}
+  
+.card_part {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 7;
+  
+    display: flex;
+    align-items: center;
+    width: 350px;
+    height: 300px;
+    
+    transform: translateX( 700px );
+    background-size: cover;
+    
+    animation: opaqTransition 27s cubic-bezier(0, 0, 0, 0.97) infinite;
+}
+  
+  
+.card_part.card_part-two {
+    z-index: 6;
+    animation-delay: 3s;
+}
+  
+.card_part.card_part-three {
+    z-index: 5;
+    animation-delay: 6s;
+}
+  
+.card_part.card_part-four {
+    z-index: 4;
+    animation-delay: 9s;
+}
+
+.card_part.card_part-five {
+    z-index: 4;
+    animation-delay: 12s;
+}
+
+.card_part.card_part-six {
+    z-index: 4;
+    animation-delay: 15s;
+}
+
+.card_part.card_part-seven {
+    z-index: 4;
+    animation-delay: 18s;
+}
+
+.card_part.card_part-eight {
+    z-index: 4;
+    animation-delay: 21s;
+}
+
+.card_part.card_part-nine {
+    z-index: 4;
+    animation-delay: 24s;
+}
+  
+  
+@keyframes opaqTransition {
+    3% { transform: translateX( 0 ); }
+    25% { transform: translateX( 0 ); }
+    28% { transform: translateX( -700px ); }
+    100% { transform: translateX( -700px ); }
+}
+
+/* clientes */
+
+.clientes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.clientes h3 {
+     text-align: center;
+     font-size: 50px;
+}
+
+.clientes p {
+    font-size: 18px;
+    text-align: justify;
+    margin: 15px 60px 15px 60px;
+}
+
+.clientes .container div {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 15px;
+}
+
+.clientes .container {
+    height: auto;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.marcas {
+    width: 160px;
+}
+
+/*footer*/
+
+.footer {
+    height: 180px;
+    text-align: center;
+}
+
+.footer i {
+    font-size: 20px;
+    color:  #3e4747;
+    background-color: aliceblue;
+    padding: 10px;
+    margin: 3px;
+    border-radius: 10px;
+}
+
+.footer p {
+    margin-top: 10px;
+    color: #3e4747;
+    font-family: Lato;
+}
+
+.footer .container {
+    height: 100px;
+    display: block;
+}
+
+/*     SERVIÇOS.HTML      */
+
+/*serviços*/
+
+.o-que-fazemos {
+    background-color: #ffffff;
+}
+
+.o-que-fazemos .container{
+    height: auto;
+}
+
+.o-que-fazemos h3 {
+    font-size: 50px;
+    text-align: center;
+    color: #32663a;
+}
+
+.o-que-fazemos p {
+    margin: 10px 10% 15px 10%;
+
+    text-align: center;
+    color: #32663a;
+}
+
+.o-que-fazemos .sub-titulo {
+    color: #3e4747;
+}
+
+.cards3 {
+    display: flex;
+    justify-content: center;
+}
+
+.o-que-fazemos .card-item {
+    background-color: #dddddd;
+    margin: 15px;
+    border-radius: 15px;
+    text-align: center;
+    width: 30%;
+    overflow: hidden;
+}
+
+.o-que-fazemos img {
+    width: 90%;
+    margin: 15px;
+    border-radius: 10px;
+}
+
+.imgservico {
+    transition: scale 400ms;
+}
+
+.imgservico:hover {  
+    scale: 120%;
+}
+
+.o-que-fazemos .servico1,
+.o-que-fazemos .servico2,
+.o-que-fazemos .servico3 {
+    font-size: 25px;
+}
+.o-que-fazemos .descri-serv {
+    color: #3e4747;
+    margin-bottom: 15%;
+}
+
+.o-que-fazemos .lista-servico {
+    color: #3e4747;
+    margin-bottom: 8%;
+}
+
+.o-que-fazemos .titulo-servico {
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+/*projetos executados*/
+.projetos {
+    background-color: #ffffff;
+}
+
+.lista-projetos {
+    position: relative;
+    height: auto;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 5%;
+}
+
+.projetos .rows-cards {
+    display: block;
+    margin-top: 20px;
+}
+
+.projetos .row-card-item {
+    background-color: #5d9267;
+    width: auto;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.projetos .row-card-item:hover {
+    background-color: #32663a;
+}
+
+
+.projetos .rows-cards .nome-projeto{
+    margin: 15px 0 0 10px;
+    color: #ffffff;
+    
+}
+
+.projetos .rows-cards .descricao-projeto{
+    margin: 10px 0 15px 20px;
+    color: #ffffff;
+    line-height: 25px;
+}
+
+.dados {
+    background-color: #c4d4d3;
+}
+
+.dados .container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: auto;
+}
+
+.dados-item {
+    text-align: center;
+    margin: 20px;
+    color: #3e4747;
+}
+
+.dados-item img {
+    width: 85px;
+    background-color: #32663a;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.dados-item p strong {
+    font-size: 28px;
+}
+
+/*CONTATO*/
+
+.info {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.left-side {
+    width: 50%;
+    padding: 30px;
+    background-color: #32663a;
+    border-radius: 15px;
+    margin-right: 50px;
+    height: fit-content;
+}
+
+.left-side div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.left-side div i {
+    font-size: 24px;
+    margin-right: 20px;
+    color: white;
+}
+
+.left-side div p {
+    font-size: 18px;
+    color: white;
+}
+
+.right-side {
+    width: 50%;
+}
+
+.right-side input{
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    height: 47px;
+    padding: 15px;
+    border-radius: 10px;
+    transition: 0.3s;
+    border: 1px solid #f1f1f1;
+    color: #32663a;
+    font-weight: lighter;
+}
+
+.right-side textarea {
+    border: 1px solid #f1f1f1;
+    border-radius: 10px;
+    color: #32663a;
+    margin-bottom: 10px;
+    padding: 15px;
+    width: 100%;
+    transition: 0.3s;
+    resize: none;
+}
+
+.right-side input:focus,
+.right-side textarea:focus {
+    border-color: #32663a;
+}
+
+.enviado {
+    background-color: rgb(255, 255, 255); /* Altere a cor de fundo para verde */
+    color: #32663a; /* Altere a cor do texto para branco */
+    cursor: default; /* Altere o cursor para padrão para indicar que não é mais clicável */
+}
+
+/*TELA OBRIGADO*/
+
+.body-obrigado {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-obrigado {
+    width: 100%;
+    height: 100%;
+}
+
+.mensagem-obrigado {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 80px;
+}
+
+.texto-obrigado {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.texto-obrigado h3{
+    text-align: center;
+    color: #32663a;
+    font-size: 60px;
+}
+
+.texto-obrigado p{
+    text-align: center;
+    color: #3e4747;
+    font-size: 30px;
+}
+
+.botao-obrigado {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 35px;    
+}
+
+.botao-obrigado p{
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 20px;
+    color: #3e4747;
+}
+
+.botao-obrigado a{
+    font-size: 20px;
+    z-index: 10;
+
+}
+
+@media (max-width: 1094px) {
+    .proposito2 .negocio {
+        flex-direction: column;
+    }
+    .proposito2 .negocio .text-proposito {
+        width: 80%;
+        padding: 0 0;
+        margin-bottom: 15px;
+    }
+    .proposito2 .negocio .img-proposito {
+        width: 60%;
+    }
+}
+
+@media (max-width: 1064px) {
+    nav .icon-menu {
+        display: block;
+    }
+    .ul-pages {
+        z-index: 100;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background: #32663a;
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        clip-path: circle(0% at 91% 10%);
+        transition: 0.7;
+    }
+
+    .ul-pages.open{
+        clip-path: circle(127.9% at 91% 10%);
+    }
+    .ul-pages a {
+        margin: 10px 0;
+        font-size: 16px;
+    }
+
+    nav .icon-close {
+        display: block;
+        position: absolute;
+        top: 45px;
+        right: 30px;
+    }
+    .o-que-fazemos .servico1,
+    .o-que-fazemos .servico2,
+    .o-que-fazemos .servico3 {
+        font-size: 20px;
+    }
+    .o-que-fazemos .descri-serv {
+        color: #3e4747;
+        font-size: 15px;
+        margin-bottom: 15%;
+    }
+
+    .o-que-fazemos .lista-servico {
+        color: #3e4747;
+        font-size: 15px;
+        margin-bottom: 8%;
+    }
+
+    .o-que-fazemos .titulo-servico {
+        font-size: 17px;
+        margin-top: 20px;
+    }
+
+    .o-que-fazemos img {
+        width: 80%;
+        margin: 10%;
+        border-radius: 8px;
+    }
+
+    .solucao {
+        margin: 0 5% 30px 4%;
+    }
+}
+
+@media (max-width: 860px) {
+    .servico1,
+    .servico2,
+    .servico3 {
+        font-size: 8px;
+    }
+    .solucao {
+        margin: 0 5% 30px 2%;
+    }
+}
+
+@media (max-width: 730px) {
+
+    .o-que-fazemos .servico1,
+    .o-que-fazemos .servico2,
+    .o-que-fazemos .servico3 {
+        font-size: 18px;
+    }
+    .o-que-fazemos .descri-serv {
+        color: #3e4747;
+        font-size: 12px;
+        margin-bottom: 15%;
+    }
+
+    .o-que-fazemos .lista-servico {
+        color: #3e4747;
+        font-size: 12px;
+        margin-bottom: 8%;
+    }
+
+    .o-que-fazemos .titulo-servico {
+        font-size: 15px;
+        margin-top: 20px;
+    }
+    .banner .banner-text {
+        margin: 15vh 2vw 0 2vw;  
+    }
+
+    .banner .banner-text-projetos {
+        margin: 20vw 2vw 0 2vw;  
+    }
+
+    .banner .banner-text-contato {
+        margin: 20vw 2vw 0 2vw;  
+    }
+
+    .banner .banner-text h1,
+    .banner .banner-text-contato h1,
+    .banner .banner-text-projeto h1 {
+        font-size: 50px;
+    }
+    .banner .banner-text p,
+    .banner .banner-text-contato p,
+    .banner .banner-text-projetos p {
+        font-size:15px;
+        margin-top: 10px;
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+    .logomarca .engrenagem,
+    .logomarca .logo {
+        height: 50px;
+    }
+
+    .solucao {
+        margin-right: 5%;
+        margin-right: 5%;
+    }
+
+    .solucao .negocio {
+        flex-direction: column-reverse;
+    }
+    .solucao .negocio .text-proposito{
+        width: 80%;
+        text-align: center;
+        margin-bottom: 25px;
+    }
+    .solucao .negocio .img-proposito{
+        width: 70%;
+    }
+
+    .proposito{
+        margin-left: 5px;
+        margin-right: 0;
+    }
+
+    .solucao2 {
+        margin-right: 5%;
+        margin-right: 5%;
+    }
+
+    .solucao2 .negocio {
+        flex-direction: column;
+    }
+    .solucao2 .negocio .text-proposito{
+        width: 100%;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+    .solucao2 .negocio .img-proposito{
+        width: 70%;
+    }
+
+}
+
+
+
+@media (max-width: 687px) {
+    .o-que-fazemos .servico1,
+    .o-que-fazemos .servico2,
+    .o-que-fazemos .servico3 {
+        font-size: 14px;
+    }
+    .o-que-fazemos .descri-serv {
+        color: #3e4747;
+        font-size: 10px;
+        margin-bottom: 15%;
+    }
+
+    .o-que-fazemos .lista-servico {
+        color: #3e4747;
+        font-size: 10px;
+        margin-bottom: 8%;
+    }
+
+    .o-que-fazemos .titulo-servico {
+        font-size: 12px;
+        margin-top: 20px;
+    }
+
+    .info {
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+    .info .left-side {
+        width: 80%;
+        margin-right: 0;
+        margin-top: 20px;
+    }
+    .info .right-side {
+        width: 80%;
+        margin-right: 0;
+        margin-top: 20px;
+    }
+    .o-que-fazemos .card-item {
+        background-color: #dddddd;
+        margin: 10px;
+        border-radius: 15px;
+        text-align: center;
+        width: 30%;
+        overflow: hidden;
+    }
+    .solucao {
+        margin-right: 0%;
+        margin-right: 0%;
+    }
+    .solucao .negocio .text-proposito{
+        padding: 0;
+    }
+    .solucao .negocio .img-proposito{
+        width: 80%;
+    }
+}
+
+@media (max-width: 661px) {
+    .clientes .container {
+        margin: 0;
+    }
+    .clientes .container img {
+        width: 130px;
+    }
+}
+
+@media (max-width: 648px) {
+    .proposito .negocio {
+        flex-direction: column;
+    }
+    .proposito .negocio .text-proposito {
+        width: 80%;
+        padding: 0 0;
+        margin-bottom: 15px;
+    }
+    .proposito .negocio .img-proposito {
+        width: 60%;
+    }
+}
+
+@media (max-width: 459px) {
+    .solucao2 .negocio .text-proposito {
+        padding: 15px;
+    }
+    .projetos .lista-projetos h3 {
+        font-size: 50px;
+    }
+    .clientes h3 {
+        font-size: 50px;
+    }
+}
+@media (max-width: 576px){
+    .proposito2 {
+        margin: 0;
+    }
+    .proposito2 {
+        text-align: center;
+    }
+    .proposito2 img {
+        align-items: center;
+    }
+}
+@media (max-width: 454px) {
+    .banner .banner-text {
+        margin-top: 10vw;
+    }
+    .cards3 {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .o-que-fazemos .card-item {
+        width: 80%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .o-que-fazemos .servico1,
+    .o-que-fazemos .servico2,
+    .o-que-fazemos .servico3 {
+        font-size: 20px;
+    }
+    .o-que-fazemos .descri-serv {
+        color: #3e4747;
+        font-size: 15px;
+        margin-bottom: 15%;
+    }
+
+    .o-que-fazemos .lista-servico {
+        color: #3e4747;
+        font-size: 15px;
+        margin-bottom: 8%;
+    }
+
+    .o-que-fazemos .titulo-servico {
+        font-size: 18px;
+        margin-top: 20px;
+    }
+    .solucao .negocio .text-proposito h3{
+        font-size: 50px;
+    }
+    .solucao .negocio .text-proposito p{
+        font-size: 15px;
+    }
+
+    .proposito .negocio .text-proposito {
+        text-align: center;
+        width: 80%;
+        padding: 0 0;
+        margin-bottom: 15px;
+    }
+    .proposito .negocio .text-proposito h3 {
+        font-size: 50px;
+    }
+    .proposito .negocio .text-proposito p {
+        font-size: 15px;
+    }
+    .proposito2 .negocio .text-proposito h3 {
+        font-size: 50px;
+    }
+    .proposito2 .negocio .text-proposito p {
+        font-size: 15px;
+    }
+    .solucao .negocio .text-proposito h3{
+        font-size: 50px;
+    }
+    .solucao .negocio .text-proposito p{
+        padding: 15px;
+    }
+
+    .clientes h3 {
+        font-size: 40px;
+    }
+    .clientes p {
+        font-size: 15px;
+        margin-left: 10vw;
+        margin-right: 10vw;
+
+    }
+    .footer .container p{
+        font-size: 15px;
+    }
+    .solucao .negocio .text-proposito h3{
+        font-size: 50px;
+    }
+    .solucao .negocio .text-proposito .ul2 p {
+        margin: 0 0 0 0;
+        padding: 10px 3px 5px 3px;
+    }
+    .projetos .lista-projetos h3 {
+        font-size: 50px;
+    }
+    .solucao2 .negocio .text-proposito h3{
+        font-size: 50px;
+    }
+    .solucao2 .negocio .text-proposito p{
+        font-size: 15px;
+    }
+    .projetos .rows-cards .descricao-projeto {
+        font-size: 15px;
+    }
+    
+}
+
+@media (max-width: 442px) {
+    .dados-item img{
+        width: 70px;
+    }
+    .dados-item p strong {
+        font-size: 20px;
+    }
+    .dados-item p{
+        font-size: 15px        
+    }
+
+}
+
+@media (max-width: 386px) {
+    .dados-item img{
+        width: 85px;
+    }
+    .dados-item p strong {
+        font-size: 28px;
+    }
+    .dados-item p{
+        font-size: 18px        
+    }
+}

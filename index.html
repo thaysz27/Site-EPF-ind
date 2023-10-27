@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link href="grid/simple-grid.min.css" rel="stylesheet">
+    <title>Home | EPF Engenharia de pré Fabricados</title>
+    <link rel="icon" href="img/Logomarca/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="img/Logomarca/favicon.ico" type="image/x-icon">
+
+</head>
+<body>
+    <div class="overlay-image">
+        <img src="img/pilares.png" class="pilares"z-index:2/>
+    </div>
+    <header style="background-image: url('img/Backgrounds/home.jpg'); height: 100vh;" z-index:1>
+        <div class="container" z-index: 3>
+            <nav>
+                <a href="index.html">
+                    <div class="logomarca" style="display: flex; background: rgb(185,196,195);
+                    background: linear-gradient(90deg, rgba(158,158,158,0.0) 0%, rgba(255,255,255,0.70) 100%); padding: 20px; border-radius: 20px;">
+                        <img class="engrenagem" src="img/Logomarca/LOGO-EPF-engrenagem.png" alt="Logo" height=80px>
+                        <img class="logo"src="img/Logomarca/LOGO-EPF-texto.png" alt="Logo" height=80px/>
+                    </div>
+                </a>
+                <ul class="ul-pages">            
+                    <a style="font-size: 17px;" href="index.html"><strong>Início</strong></a>
+                    <a style="font-size: 17px;" href="sobre.html"><strong>Sobre</strong></a>
+                    <a style="font-size: 17px;" href="servico.html"><strong>O que fazemos</strong></a>
+                    <a style="font-size: 17px;" href="projetos.html"><strong>O que já fizemos</strong></a>
+                    <a style="font-size: 17px;" href="contato.html"><strong>Contato</strong></a>
+                    <div class="icon-close" onclick="closeMenu()">
+                        <i class="fa fa-times-circle" aria-hidden="true"></i>
+                    </div>
+                </ul>
+                <div class="icon-menu" onclick="openMenu()">
+                    <i class="fa fa-bars"></i>
+                </div>
+            </nav>
+            <section class="banner">
+                <div class="banner-text">
+                    <h1>Construindo o futuro, agora</h1>
+                    <p><strong>O nosso negócio é viabilizar e facilitar o seu negócio</strong></p>
+                    <a href="contato.html" class="btn animate-btn">Entrar em contato</a>
+                </div>
+            </section>
+        </div>
+    </header>
+    <!--fim header-->
+    <section class="proposito">
+        <div class="negocio">
+            <div class="text-proposito">
+                <h3>Nosso negócio</h3>
+                <p>
+                    Desenvolvemos Tecnologia para Construção Pré-Fabricada
+                    e Sistemas Construtivos Industrializados.<br>
+                    Realizamos estudos de viabilidade de projetos de engenharia.<br>
+                    Buscamos constantemente a evolução deste setor que, apesar de
+                    tradicional, possui um campo vastíssimo para inovação.
+                </p>
+                <a href="contato.html" class="btn">Entrar em contato</a>
+            </div>
+            <div class="img-proposito">
+                <img src="img/negocio.png"/>
+            </div>  
+        </div>
+    </section>
+    <!--fim section 1 (propósito)-->
+    <section class="solucao">
+        <div class="negocio">
+            <div class="img-proposito">
+                <div class="card" style="background-image: url(cards/9.png);">
+                    <div class="card_part card_part-one" style="background-image: url('cards/1.png')">
+                    </div>
+                    
+                    <!-- Photo 2 -->
+                    <div class="card_part card_part-two" style="background-image: url('cards/2.png')">
+                
+                    </div>
+                
+                    <!-- Photo 3 -->
+                    <div class="card_part card_part-three" style="background-image: url('cards/3.png')">
+                    </div>
+                
+                    <!-- Photo 4 -->
+                    <div class="card_part card_part-four" style="background-image: url('cards/4.png')">
+                    </div>
+
+                    <!-- Photo 5 -->
+                    <div class="card_part card_part-five" style="background-image: url('cards/5.png')">
+                    </div>
+
+                    <!-- Photo 6 -->
+                    <div class="card_part card_part-six" style="background-image: url('cards/6.png')">
+                    </div>
+
+                    <!-- Photo 7 -->
+                    <div class="card_part card_part-seven" style="background-image: url('cards/7.png')">
+                    </div>
+
+                    <!-- Photo 8 -->
+                    <div class="card_part card_part-eight" style="background-image: url('cards/8.png')">
+                    </div>
+
+                    <!-- Photo 9 -->
+                    <div class="card_part card_part-four" style="background-image: url('cards/9.png')">
+                    </div>
+                </div> 
+            </div> 
+            <div class="text-proposito">
+                <h3>Soluções para você</h3>
+                <ul class="ul2">            
+                    <p>▹ Adequação de Estrutura Moldada in loco para Pré Fabricada</p>
+                    <p>▹ Implantação de Unidades temporárias em canteiros (pré moldagem)</p>
+                    <p>▹ Fabricação em Unidades Industriais fixas (pré fabricação)</p>
+                    <p>▹ Estudos de Viabilidade</p>
+                    <p>▹ ​Projetos</p>
+                    <p>▹ Consultoria</p>
+                    <p>▹ Suporte em ERP</p>
+                    <p>▹ Parcerias Tecnológicas</p>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!--fim section 2 (soluções)-->
+    <section class="clientes" style="background-color: white;">
+        <div class="container">
+            <h3 style="color: #3c7746;">Nossos Clientes</h3>
+            <p style="color: #4D5155; text-align: center; margin-bottom: 35px;"><strong>Essas são algumas das empresas que confiam em nosso trabalho</strong></p>
+            <div>
+                <img src="img/marcas/1.png" class="marcas" alt="elizabeth">
+                <img src="img/marcas/2.png" class="marcas" alt="whb">
+                <img src="img/marcas/3.png" class="marcas" alt="petribu">
+                <img src="img/marcas/4.png" class="marcas" alt="gestamp">
+                <img src="img/marcas/5.png" class="marcas" alt="moura">
+                <img src="img/marcas/6.png" class="marcas" alt="extra">
+                <img src="img/marcas/7.png" class="marcas" alt="kicaldo">
+                <img src="img/marcas/8.png" class="marcas" alt="arcomix">
+                <img src="img/marcas/9.png" class="marcas" alt="jole">
+                <img src="img/marcas/10.png" class="marcas" alt="hoga">
+                <img src="img/marcas/11.png" class="marcas" alt="itemm">
+                <img src="img/marcas/12.png" class="marcas" alt="leroymerlin">
+            </div>
+        </div>
+    </section>
+        <!--fim section clientes-->
+        <footer class="footer" style="background-color:#dddddd;">
+            <div class="container">
+                <div class="links">
+                    <a href="https://instagram.com/epf_engenharia?utm_source=qr&igshid=MzNlNGNkZWQ4Mg%3D%3D"> <i class="fab fa-instagram"></i> </a>
+                    <a href="mailto:contato@epf.ind.br"> <i class="fa-regular fa-envelope"></i> </a>
+                    <a href="https://www.google.com/maps/search/Rua+Dr.+Fernando+Allain,145+,+Espinheiro,+Recife+-+PE/@-8.0417866,-34.8914454,17z?entry=ttu"> <i class="fa-solid fa-location-dot"></i> </a>
+                </div>
+                <p>Desenvolvido por Thays Vithorya</p>
+            </div>
+        </footer>
+        <!--fim footer-->
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link href="grid/simple-grid.min.css" rel="stylesheet">
+    <title>Obras | EPF Engenharia de pré Fabricados</title>
+    <link rel="icon" href="img/Logomarca/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="img/Logomarca/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <div class="overlay-image">
+        <img src="" class="pilares"z-index:2/>
+    </div>
+    <header style="background-image: url('img/Backgrounds/Fizemos.jpg'); height: 100vh;" z-index:1>
+        <div class="container" z-index: 3>
+             <nav>
+                <a href="index.html">
+                    <div class="logomarca" style="display: flex; background: rgb(185,196,195);
+                    background: linear-gradient(90deg, rgba(158,158,158,0.0) 0%, rgba(255,255,255,0.70) 100%); padding: 20px; border-radius: 20px;">
+                        <img class="engrenagem" src="img/Logomarca/LOGO-EPF-engrenagem.png" alt="Logo" height=80px>
+                        <img class="logo" src="img/Logomarca/LOGO-EPF-texto.png" alt="Logo" height=80px/>
+                    </div>
+                </a>
+                <ul class="ul-pages">            
+                    <a style="font-size: 17px;" href="index.html"><strong>Início</strong></a>
+                    <a style="font-size: 17px;" href="sobre.html"><strong>Sobre</strong></a>
+                    <a style="font-size: 17px;" href="servico.html"><strong>O que fazemos</strong></a>
+                    <a style="font-size: 17px;" href="projetos.html"><strong>O que já fizemos</strong></a>
+                    <a style="font-size: 17px;" href="contato.html"><strong>Contato</strong></a>
+                    <div class="icon-close" onclick="closeMenu()">
+                        <i class="fa fa-times-circle" aria-hidden="true"></i>
+                    </div>
+                </ul>
+                <div class="icon-menu" onclick="openMenu()">
+                    <i class="fa fa-bars"></i>
+                </div>
+            </nav>
+            <section class="banner">
+                <div class="banner-text-projetos">
+                    <h1>Soluções entregues</h1>
+                    <p><strong>Confira as soluções que já entregamos!</strong></p>
+                </div>
+            </section>
+        </div>
+    </header>
+    <!--fim header-->
+    <section class="projetos">
+        <div class="lista-projetos">
+            <h3 style="color: #3c7746; text-align: center;">O que já executamos</h3>
+            <!--card1-->
+            <div class="rows-cards">
+                <!--card1-->
+                <div class="row-card-item">
+                    <p class="nome-projeto" style="font-size: 20px;"><strong>Como Pré Fabricadores:</strong></p>
+                    <p class="descricao-projeto">
+                        ▹Novo Atacarejo: Diversas unidades (parceria com a EPF Brasil)<br>
+                        ▹Centro de Distribuição Arco Íris: Jaboatão dos Guararapes - PE, 10.000,00 m²<br>
+                        ▹Centro de Distribuição Somar/ Kicaldo: Jaboatão dos Guararapes - PE, 10.000,00 m²<br>
+                        ▹Fábrica da WHB: Glória do Goitá - PE, 50.000,00 m²<br>
+                        ▹Supermercado Extra: Maceió - AL, 2.300,00 m²<br>
+                        ▹Fábrica de Flanges Iraeta: Cabo de Santo Agostinho - PE, 15.000,00 m²<br>
+                        ▹Condomínio Logístico: Moreno - PE, 33.000,00 m²<br>
+                        ▹Centro de Distribuição Baterias Moura: Belo Jardim - PE, 15.000,00 m²<br>
+                        ▹Hotel da WHB: Glória do Goitá - PE, 7.000,00 m²<br>
+                        ▹Cerâmica Elizabeth: Goianinha - RN, 1.800,00 m² (parceria com a empresa PREDESIGN)<br>
+                        ▹Fábrica da Topmix Esquadrias: Vitória de Sto Antão - PE, 2.400,00 m²<br>
+                        ▹Instituto Tecnológico das Baterias Moura: Belo Jardim - PE, 1.500,00 m²<br>
+                        ▹Leroy Merlin: Natal - RN, 15.000,00 m² (parceria com a empresa PREDESIGN)<br>
+                        ▹Carpina Mall Shopping: Carpina - PE, 15.000,00 m²<br>
+                        ▹Assaí Atacadista: Diversas unidades, 8.000,00 m² (parceria com a empresa FL)
+                    </p>
+                </div>
+                <!--card2-->
+                <div class="row-card-item">
+                    <p class="nome-projeto" style="font-size: 20px;"><strong>Como Parceiros Tecnológicos:</strong></p>
+                    <p class="descricao-projeto">
+                        ▹Projeto Pátio Americano, Recife - PE, 32.000,00 m² (parceria com a GD Empreendimentos)
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Section dados marketing-->
+    <section class="dados">
+        <div class="container">
+            <!--dado1-->
+            <div class="dados-item">
+                <i class="fa-regular fa-building fa-2xl" style="color: rgb(255, 255, 255); background-color: #3c7746; padding:27px 15px 25px 15px; border-radius: 8px;"></i>
+                <p><strong>+100</strong></p>
+                <p>Projetos concluídos</p>
+            </div>
+            <!--dado2-->
+            <div class="dados-item">
+                <i class="fa-solid fa-users fa-2xl" style="color: rgb(255, 255, 255); background-color: #3c7746; padding:27px 8px 25px 8px; border-radius: 8px;"></i>
+                <p><strong>+50</strong></p>
+                <p>Clientes satisfeitos</p>
+            </div>
+        </div>
+    </section>
+    <!--fim section 1 (projetos entregues)-->
+    <section class="clientes" style="background-color: white;">
+        <div class="container">
+            <h3 style="color: #3c7746;">Nossos Clientes</h3>
+            <p style="color: #4D5155; text-align: center; margin-bottom: 35px;"><strong>Essas são algumas das empresas que confiam em nosso trabalho</strong></p>
+            <div>
+                <img src="img/marcas/1.png" class="marcas" alt="elizabeth">
+                <img src="img/marcas/2.png" class="marcas" alt="whb">
+                <img src="img/marcas/3.png" class="marcas" alt="petribu">
+                <img src="img/marcas/4.png" class="marcas" alt="gestamp">
+                <img src="img/marcas/5.png" class="marcas" alt="moura">
+                <img src="img/marcas/6.png" class="marcas" alt="extra">
+                <img src="img/marcas/7.png" class="marcas" alt="kicaldo">
+                <img src="img/marcas/8.png" class="marcas" alt="arcomix">
+                <img src="img/marcas/9.png" class="marcas" alt="jole">
+                <img src="img/marcas/10.png" class="marcas" alt="hoga">
+                <img src="img/marcas/11.png" class="marcas" alt="itemm">
+                <img src="img/marcas/12.png" class="marcas" alt="leroymerlin">
+            </div>
+        </div>
+    </section>
+    <!--fim section clientes-->
+        <footer class="footer" style="background-color:#dddddd;">
+            <div class="container">
+                <div class="links">
+                    <a href="https://instagram.com/epf_engenharia?utm_source=qr&igshid=MzNlNGNkZWQ4Mg%3D%3D"> <i class="fab fa-instagram"></i> </a>
+                    <a href="mailto:contato@epf.ind.br"> <i class="fa-regular fa-envelope"></i> </a>
+                    <a href="https://www.google.com/maps/search/Rua+Dr.+Fernando+Allain,145+,+Espinheiro,+Recife+-+PE/@-8.0417866,-34.8914454,17z?entry=ttu"> <i class="fa-solid fa-location-dot"></i> </a>
+                </div>
+                <p>Desenvolvido por Thays Vithorya</p>
+            </div>
+        </footer>
+        <!--fim footer-->
+    <script src="js/main.js"></script>
+</body>
+</html>
